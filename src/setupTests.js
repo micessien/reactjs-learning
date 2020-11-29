@@ -1,6 +1,6 @@
 import chai from 'chai'
+import createChaiJestDiff from 'chai-jest-diff'
 import dirtyChai from 'dirty-chai'
-import girtyChai from 'dirty-chai'
 
 
-chai.use(dirtyChai)
+chai.use(dirtyChai).use(createChaiJestDiff())
